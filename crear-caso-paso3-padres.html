@@ -4,11 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SIMAUD-LEX — Datos de los Padres</title>
-
-  <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
 
   <style>
@@ -26,10 +22,6 @@
 <body class="bg-[#f5f7fa] text-slate-800">
 
   <div class="flex min-h-screen">
-
-    <!-- ==========================
-         SIDEBAR
-    ============================= -->
     <aside class="w-72 bg-white shadow-md flex flex-col">
 
       <div class="px-6 py-6 border-b">
@@ -150,57 +142,68 @@
         </h2>
 
         <form id="formPadres" class="space-y-6">
-          <div>
-            <label class="block font-medium mb-1">Nombre Completo *</label>
-            <input id="nombre" type="text" class="w-full p-3 border rounded-lg"
-              placeholder="Nombre completo de la madre">
-          </div>
-          <div>
-            <label class="block font-medium mb-1">Cédula / Identidad *</label>
-            <input id="cedula" type="text" class="w-full p-3 border rounded-lg"
-              placeholder="Ej: 001-1234567-8">
-          </div>
-          <div>
-            <label class="block font-medium mb-1">Ingresos Mensuales (RD$) *</label>
-            <input id="ingresos" type="number" class="w-full p-3 border rounded-lg"
-              placeholder="Ej: 35000">
-          </div>
-          <div>
-            <label class="block font-medium mb-1">Ocupación *</label>
-            <input id="ocupacion" type="text" class="w-full p-3 border rounded-lg"
-              placeholder="Ej: Maestra, enfermera, etc.">
-          </div>
 
-          <div>
-            <label class="block font-medium mb-1">Horario Laboral *</label>
-            <input id="horario" type="text" class="w-full p-3 border rounded-lg"
-              placeholder="Ej: Lunes a Viernes — 8:00 AM a 4:00 PM">
-          </div>
-          <div>
-            <label class="block font-medium mb-1">Historial de Convivencia *</label>
-            <textarea id="historial" class="w-full p-3 border rounded-lg h-24"
-              placeholder="Tiempo conviviendo con el NNA, relación, etc."></textarea>
-          </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          <div>
-            <label class="block font-medium mb-1">Cumplimiento Previo (%) *</label>
-            <input id="cumplimiento" type="number" max="100" min="0" class="w-full p-3 border rounded-lg"
-              placeholder="0 - 100">
-          </div>
-          <div>
-            <label class="block font-medium mb-1">Informes Psico-Sociales *</label>
-            <textarea id="informes" class="w-full p-3 border rounded-lg h-24"
-              placeholder="Resumen de evaluaciones psico-sociales"></textarea>
-          </div>
+    <div>
+      <label class="block font-medium mb-1">Nombre Completo *</label>
+      <input id="nombre" type="text" class="w-full p-3 border rounded-lg"
+        placeholder="Nombre completo de la madre">
+    </div>
 
-         <a 
-  href="crear-caso-paso4-evidencias.html"
-  class="w-full block text-center bg-[#1E2A47] text-white py-3 rounded-lg font-medium hover:bg-[#162033]"
->
-  Guardar Información de los Padres
-</a>
+    <div>
+      <label class="block font-medium mb-1">Cédula / Identidad *</label>
+      <input id="cedula" type="text" class="w-full p-3 border rounded-lg"
+        placeholder="Ej: 001-1234567-8">
+    </div>
 
-        </form>
+    <div>
+      <label class="block font-medium mb-1">Ingresos Mensuales (RD$) *</label>
+      <input id="ingresos" type="number" class="w-full p-3 border rounded-lg"
+        placeholder="Ej: 35000">
+    </div>
+
+    <div>
+      <label class="block font-medium mb-1">Ocupación *</label>
+      <input id="ocupacion" type="text" class="w-full p-3 border rounded-lg"
+        placeholder="Ej: Maestra, enfermera, etc.">
+    </div>
+
+    <div>
+      <label class="block font-medium mb-1">Horario Laboral *</label>
+      <input id="horario" type="text" class="w-full p-3 border rounded-lg"
+        placeholder="Ej: Lunes a Viernes — 8:00 AM a 4:00 PM">
+    </div>
+
+    <div>
+      <label class="block font-medium mb-1">Historial de Convivencia *</label>
+      <textarea id="historial" class="w-full p-3 border rounded-lg h-24"
+        placeholder="Tiempo conviviendo con el NNA, relación, etc."></textarea>
+    </div>
+
+    <div>
+      <label class="block font-medium mb-1">Cumplimiento Previo (%) *</label>
+      <input id="cumplimiento" type="number" max="100" min="0" class="w-full p-3 border rounded-lg"
+        placeholder="0 - 100">
+    </div>
+
+    <div>
+      <label class="block font-medium mb-1">Informes Psico-Sociales *</label>
+      <textarea id="informes" class="w-full p-3 border rounded-lg h-24"
+        placeholder="Resumen de evaluaciones psico-sociales"></textarea>
+    </div>
+
+  </div>
+
+  <a 
+    href="crear-caso-paso4-evidencias.html"
+    class="w-full block text-center bg-[#1E2A47] text-white py-3 rounded-lg font-medium hover:bg-[#162033]"
+  >
+    Guardar Información de los Padres
+  </a>
+
+</form>
+
 
       </div>
 
@@ -257,3 +260,4 @@
 
 </body>
 </html>
+
