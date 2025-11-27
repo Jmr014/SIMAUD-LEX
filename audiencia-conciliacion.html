@@ -17,8 +17,6 @@
 <body class="bg-[#f5f7fa] text-slate-800">
 
 <div class="flex min-h-screen">
-
-  <!-- SIDEBAR -->
   <aside class="w-72 bg-white shadow-md flex flex-col">
 
     <div class="px-6 py-6 border-b">
@@ -131,26 +129,21 @@
 
       <p class="text-sm text-slate-500 mb-4">Ingrese la postura inicial de cada parte:</p>
 
-      <!-- Posturas -->
       <label class="font-medium">Propuesta de la Madre *</label>
       <textarea class="w-full border p-3 rounded-lg mb-4" placeholder="Ej: Deseo mantener la guarda y visitas sin pernocta..."></textarea>
 
       <label class="font-medium">Propuesta del Padre *</label>
       <textarea class="w-full border p-3 rounded-lg mb-4" placeholder="Ej: Solicito visitas fines de semana con pernocta..."></textarea>
 
-      <!-- Acuerdo -->
       <label class="font-medium mb-2">¿Ambas partes están dispuestas a un acuerdo? *</label>
       <select id="acuerdo" class="w-full border p-3 rounded-lg mb-4">
         <option value="">Seleccione</option>
         <option value="si">Sí, ambas partes están de acuerdo</option>
         <option value="no">No se llegó a un acuerdo</option>
       </select>
-
-      <!-- Justificación -->
       <label class="font-medium">Observaciones o Condiciones del Acuerdo (si aplica)</label>
       <textarea class="w-full border p-3 rounded-lg mb-4" placeholder="Detalles adicionales: horarios, supervisión, restricciones..."></textarea>
 
-      <!-- Botones -->
       <div class="flex justify-end gap-4">
         <button class="px-6 py-3 bg-slate-200 rounded-lg hover:bg-slate-300">Guardar Registro</button>
 
@@ -178,3 +171,4 @@ document.getElementById("btnContinuar").onclick = () => {
 
 </body>
 </html>
+
