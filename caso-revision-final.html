@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIMAUD-LEX — Revisar Datos del Caso</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+</head>
+
+<body class="bg-[#f5f7fa] text-slate-800">
+
+<div class="flex min-h-screen">
+
+  <aside class="w-72 bg-white shadow-md flex flex-col">
+
+    <div class="px-6 py-6 border-b">
+      <img src="img/logo-simaudlex.png" class="h-16 mx-auto mb-3" alt="Logo SIMAUD-LEX">
+      <p class="text-center text-sm text-slate-500">Simulador Jurídico de Audiencias</p>
+    </div>
+
+    <div class="px-6 py-4 border-b flex items-center gap-3">
+      <div class="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-semibold">
+        JP
+      </div>
+      <div>
+        <p class="font-semibold text-slate-800">Johan</p>
+        <p class="text-xs text-slate-500">Estudiante</p>
+      </div>
+    </div>
+
+
+      <nav class="flex-grow px-4 py-6">
+        <ul class="space-y-2">
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-100 font-semibold text-[#1E2A47]">
+              <span class="material-icons-outlined">dashboard</span>
+              Dashboard
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">gavel</span>
+              Simulaciones
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">folder_open</span>
+              Casos
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">menu_book</span>
+              Biblioteca Legal
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">help_outline</span>
+              Ayuda
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    <div class="p-6 border-t">
+      <button class="flex items-center gap-3 w-full px-4 py-2 rounded-lg hover:bg-slate-100 text-red-600 font-medium">
+        <span class="material-icons-outlined">logout</span>
+        Cerrar Sesión
+      </button>
+    </div>
+
+  </aside>
+  <main class="flex-1 p-10">
+
+    <h1 class="text-3xl font-bold text-[#1E2A47] mb-2">Revisión del Caso</h1>
+    <p class="text-slate-600 mb-10">Verifique que toda la información del caso sea correcta antes de continuar.</p>
+
+       <!-- PASOS DEL FORMULARIO -->
+<div class="flex justify-between mb-10 max-w-3xl">
+
+  <!-- Paso 1 -->
+  <div class="text-center">
+    <div class="w-10 h-10 mx-auto rounded-full bg-[#FF7A00] text-white flex items-center justify-center font-semibold">
+      1
+    </div>
+    <p class="mt-2 text-sm font-medium text-[#FF7A00]">Información Básica</p>
+  </div>
+
+  <!-- Paso 2 -->
+  <div class="text-center">
+    <div class="w-10 h-10 mx-auto rounded-full bg-[#FF7A00] text-white flex items-center justify-center font-semibold">
+      2
+    </div>
+    <p class="mt-2 text-sm font-medium text-[#FF7A00]">Datos del NNA</p>
+  </div>
+  <div class="text-center">
+    <div class="w-10 h-10 mx-auto rounded-full bg-[#FF7A00] text-white flex items-center justify-center font-semibold">
+      3
+    </div>
+    <p class="mt-2 text-sm font-medium text-[#FF7A00]">Datos de los Padres</p>
+  </div>
+  <div class="text-center">
+    <div class="w-10 h-10 mx-auto rounded-full bg-[#FF7A00] text-white flex items-center justify-center font-semibold">
+      4
+    </div>
+    <p class="mt-2 text-sm font-medium text-[#FF7A00]">Evidencias</p>
+  </div>
+
+ <div class="text-center">
+    <div class="w-10 h-10 mx-auto rounded-full bg-[#1E2A47] text-white flex items-center justify-center font-semibold">
+      5
+    </div>
+    <p class="mt-2 text-sm font-medium text-[#1E2A47]">Revisar y Completa</p>
+  </div>
+
+</div>
+
+    <div class="flex justify-between mb-6">
+      <button onclick="window.print()" class="flex items-center gap-2 px-4 py-2 bg-slate-200 hover:bg-slate-300 rounded-lg text-slate-700">
+        <span class="material-icons-outlined">print</span>
+        Imprimir
+      </button>
+    </div>
+
+    <section class="bg-white p-6 rounded-xl shadow mb-6">
+      <h2 class="font-semibold text-xl mb-4 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">article</span>
+        Información Básica del Caso
+      </h2>
+
+      <div class="space-y-2 text-sm">
+        <p><strong>Título del Caso:</strong> Disputa de Custodia - Familia García</p>
+        <p><strong>Tipo de Audiencia:</strong> Régimen de Visitas</p>
+        <p><strong>Hechos Probados:</strong> —</p>
+        <p><strong>Riesgos:</strong> —</p>
+      </div>
+    </section>
+
+    <section class="bg-white p-6 rounded-xl shadow mb-6">
+      <h2 class="font-semibold text-xl mb-4 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">child_care</span>
+        Datos del Niño, Niña o Adolescente (NNA)
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <p><strong>Nombre:</strong> Andrés Pérez</p>
+        <p><strong>Edad:</strong> 8 años</p>
+        <p><strong>Escolaridad:</strong> 3er grado</p>
+        <p><strong>Estado de Salud:</strong> Bueno</p>
+        <p class="md:col-span-2"><strong>Residencia Actual:</strong> Dirección completa…</p>
+        <p class="md:col-span-2"><strong>Opinión del NNA:</strong> Desea vivir con la madre…</p>
+      </div>
+    </section>
+
+    <section class="bg-white p-6 rounded-xl shadow mb-6">
+      <h2 class="font-semibold text-xl mb-4 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">group</span>
+        Información de los Padres
+      </h2>
+
+      <h3 class="font-semibold text-[#1E2A47] mb-2">Madre</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm mb-6">
+        <p><strong>Nombre:</strong> Ana Pérez</p>
+        <p><strong>Cédula:</strong> 001-0000000-0</p>
+        <p><strong>Ingresos:</strong> RD$ 35,000</p>
+        <p><strong>Ocupación:</strong> Maestra</p>
+        <p><strong>Horario:</strong> 8:00 AM - 2:00 PM</p>
+        <p class="md:col-span-2"><strong>Historial de Convivencia:</strong> —</p>
+      </div>
+
+      <h3 class="font-semibold text-[#1E2A47] mb-2">Padre</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <p><strong>Nombre:</strong> Carlos Gómez</p>
+        <p><strong>Cédula:</strong> 402-0000000-0</p>
+        <p><strong>Ingresos:</strong> RD$ 42,000</p>
+        <p><strong>Ocupación:</strong> Chofer</p>
+        <p><strong>Horario:</strong> Rotativo</p>
+        <p class="md:col-span-2"><strong>Historial:</strong> Dos incumplimientos leves.</p>
+      </div>
+    </section>
+
+    <section class="bg-white p-6 rounded-xl shadow mb-10">
+      <h2 class="font-semibold text-xl mb-4 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">inventory_2</span>
+        Evidencias Registradas
+      </h2>
+
+      <div class="space-y-4">
+
+        <div class="bg-slate-100 p-4 rounded-lg">
+          <p class="font-semibold">Evidencia 1 — Documento</p>
+          <p class="text-sm text-slate-600">Pertinencia: Demuestra estabilidad escolar</p>
+          <p class="text-xs text-slate-500">Fecha: 25/11/2025</p>
+        </div>
+
+        <div class="bg-slate-100 p-4 rounded-lg">
+          <p class="font-semibold">Evidencia 2 — Testimonio</p>
+          <p class="text-sm text-slate-600">Pertinencia: Testigo presencial</p>
+          <p class="text-xs text-slate-500">Fecha: 26/11/2025</p>
+        </div>
+
+      </div>
+    </section>
+
+  <a 
+  href="caso-detalle.html"
+  class="w-full py-3 bg-[#1E2A47] hover:bg-[#162033] text-white text-lg rounded-lg font-semibold block text-center"
+>
+  Confirmar
+</a>
+
+  </main>
+
+</div>
+
+</body>
+</html>

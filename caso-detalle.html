@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMAUD-LEX — Detalle del Caso</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+</head>
+
+<body class="bg-[#f5f7fa] text-slate-800">
+<div class="flex min-h-screen">
+
+  <aside class="w-72 bg-white shadow-md flex flex-col">
+    <div class="px-6 py-6 border-b">
+      <img src="img/logo-simaudlex.png" class="h-16 mx-auto mb-3" alt="Logo SIMAUD-LEX">
+      <p class="text-center text-sm text-slate-500">Simulador Jurídico de Audiencias</p>
+    </div>
+
+    <div class="px-6 py-4 border-b flex items-center gap-3">
+      <div class="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-semibold">
+        JP
+      </div>
+      <div>
+        <p class="font-semibold text-slate-800">Johan</p>
+        <p class="text-xs text-slate-500">Estudiante</p>
+      </div>
+    </div>
+
+    <nav class="flex-grow px-4 py-6">
+      <ul class="space-y-2">
+
+        <li>
+          <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+            <span class="material-icons-outlined">dashboard</span>
+            Dashboard
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+            <span class="material-icons-outlined">gavel</span>
+            Simulaciones
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-100 font-semibold text-[#1E2A47]">
+            <span class="material-icons-outlined">folder_open</span>
+            Casos
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+            <span class="material-icons-outlined">menu_book</span>
+            Biblioteca Legal
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+            <span class="material-icons-outlined">help_outline</span>
+            Ayuda
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="p-6 border-t">
+      <button class="flex items-center gap-3 w-full px-4 py-2 rounded-lg hover:bg-slate-100 text-red-600 font-medium">
+        <span class="material-icons-outlined">logout</span>
+        Cerrar Sesión
+      </button>
+    </div>
+
+  </aside>
+
+
+  <main class="flex-1 p-10">
+    <a href="casos.html" class="flex items-center gap-2 text-sm text-slate-600 mb-4 hover:underline">
+      <span class="material-icons-outlined text-base">arrow_back</span>
+      Volver a Casos
+    </a>
+    <div class="flex items-center justify-between mb-2">
+      <h1 class="text-3xl font-bold text-[#1E2A47]">Título del Caso</h1>
+      <span class="px-4 py-1 text-xs bg-slate-200 rounded-full text-slate-700">
+        En Proceso
+      </span>
+    </div>
+    <p class="uppercase text-sm font-semibold text-slate-500 mb-8 tracking-wide">
+      RÉGIMEN DE VISITAS
+    </p>
+    <section class="bg-white p-6 rounded-xl shadow mb-6">
+      <h2 class="font-semibold text-lg mb-1">Hechos del Caso</h2>
+      <p class="text-sm text-slate-500 mb-4">Creado: 26/11/2025</p>
+      <p class="font-medium">Situación:</p>
+      <p class="text-slate-600 mb-4">Aquí irá el resumen de los hechos principales del caso.</p>
+
+      <p class="font-medium">Partes Involucradas:</p>
+      <ul class="list-disc ml-6 text-slate-600">
+        <li>Madre: —</li>
+        <li>Padre: —</li>
+        <li>NNA: —</li>
+      </ul>
+    </section>
+    <section class="bg-white p-6 rounded-xl shadow mb-6 flex items-center justify-between">
+      <div>
+        <h3 class="font-semibold text-lg">Análisis Legal</h3>
+        <p class="text-sm text-slate-500">Análisis basado en reglas jurídicas y casos similares.</p>
+      </div>
+      <!-- <button class="px-5 py-2 bg-[#1E2A47] hover:bg-[#162033] text-white rounded-lg flex items-center gap-2">
+        <span class="material-icons-outlined">auto_stories</span>
+        Ejecutar Análisis
+      </button> -->
+      <a 
+  href="analisis-legal.html"
+  class="px-5 py-2 bg-[#1E2A47] hover:bg-[#162033] text-white rounded-lg flex items-center gap-2"
+>
+  <span class="material-icons-outlined">auto_stories</span>
+  Ejecutar Análisis
+</a>
+
+    </section>
+
+    <section class="bg-white p-8 rounded-xl shadow mb-6">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h3 class="font-semibold text-lg">Sesiones de Audiencia</h3>
+          <p class="text-sm text-slate-500">Simulación del proceso judicial completo.</p>
+        </div>
+
+     <!-- <button class="px-5 py-2 bg-black hover:bg-slate-800 text-white rounded-lg flex items-center gap-2">
+          <span class="material-icons-outlined">gavel</span>
+          Iniciar Audiencia
+        </button>    -->
+        <a 
+  href="audiencia-iniciar.html"
+  class="px-5 py-2 bg-black hover:bg-slate-800 text-white rounded-lg flex items-center gap-2"
+>
+  <span class="material-icons-outlined">gavel</span>
+  Iniciar Audiencia
+</a>
+
+      </div>
+
+      <div class="text-center py-10 text-slate-500">
+        <span class="material-icons-outlined text-5xl mb-3">description</span>
+        <p class="font-medium mb-1">Aún no hay sesiones de audiencia</p>
+        <p class="text-sm">Inicie una audiencia para simular el proceso judicial.</p>
+      </div>
+    </section>
+
+    <section class="bg-white p-6 rounded-xl shadow mb-6">
+      <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">inventory_2</span>
+        Evidencias Aportadas
+      </h3>
+
+      <p class="text-sm text-slate-500 mb-4">Documentos, testimonios, informes y pruebas registradas.</p>
+
+      <div class="space-y-3">
+
+        <div class="p-4 rounded-lg bg-slate-100 flex justify-between items-center">
+          <div>
+            <p class="font-semibold">Evidencia 1</p>
+            <p class="text-xs text-slate-500">Tipo: Documento</p>
+          </div>
+          <span class="material-icons-outlined text-slate-500">chevron_right</span>
+        </div>
+
+        <div class="p-4 rounded-lg bg-slate-100 flex justify-between items-center">
+          <div>
+            <p class="font-semibold">Evidencia 2</p>
+            <p class="text-xs text-slate-500">Tipo: Testimonio</p>
+          </div>
+          <span class="material-icons-outlined text-slate-500">chevron_right</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bg-white p-6 rounded-xl shadow mb-10">
+      <h3 class="font-semibold text-lg mb-2 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">image</span>
+        Imágenes del Caso
+      </h3>
+
+      <p class="text-sm text-slate-500 mb-4">Ilustraciones, evidencias visuales o material complementario.</p>
+
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-slate-200 h-32 rounded-lg"></div>
+        <div class="bg-slate-200 h-32 rounded-lg"></div>
+        <div class="bg-slate-200 h-32 rounded-lg"></div>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

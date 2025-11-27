@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMAUD-LEX — Iniciar Audiencia</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+
+  <style>
+    .fase { opacity: 0.5; }
+    .fase-activa { opacity: 1; color:#FF7A00; font-weight:600; }
+  </style>
+</head>
+
+<body class="bg-[#f5f7fa] text-slate-800">
+
+<div class="flex min-h-screen">
+
+  <aside class="w-72 bg-white shadow-md flex flex-col">
+
+    <div class="px-6 py-6 border-b">
+      <img src="img/logo-simaudlex.png" class="h-16 mx-auto mb-3" alt="Logo SIMAUD-LEX">
+      <p class="text-center text-sm text-slate-500">Simulador Jurídico de Audiencias</p>
+    </div>
+
+    <div class="px-6 py-4 border-b flex items-center gap-3">
+      <div class="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-semibold">JP</div>
+      <div>
+        <p class="font-semibold text-slate-800">Johan</p>
+        <p class="text-xs text-slate-500">Estudiante</p>
+      </div>
+    </div>
+
+    <nav class="flex-grow px-4 py-6">
+      <ul class="space-y-2">
+
+        <li>
+          <a href="dashboard.html" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+            <span class="material-icons-outlined">dashboard</span>
+            Dashboard
+          </a>
+        </li>
+
+        <li>
+          <a href="simulaciones.html" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+            <span class="material-icons-outlined">gavel</span>
+            Simulaciones
+          </a>
+        </li>
+
+        <li>
+          <a href="casos.html" class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-100 font-semibold text-[#1E2A47]">
+            <span class="material-icons-outlined">folder_open</span>
+            Casos
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="p-6 border-t">
+      <button class="flex items-center gap-3 w-full px-4 py-2 rounded-lg hover:bg-slate-100 text-red-600 font-medium">
+        <span class="material-icons-outlined">logout</span>
+        Cerrar Sesión
+      </button>
+    </div>
+
+  </aside>
+
+  <main class="flex-1 p-10">
+
+    <a href="detalle-caso.html" class="flex items-center gap-2 text-sm text-slate-600 mb-4 hover:underline">
+      <span class="material-icons-outlined text-base">arrow_back</span>
+      Volver al Caso
+    </a>
+
+    <h1 class="text-3xl font-bold text-[#1E2A47] mb-1">Iniciar Simulación de Audiencia</h1>
+    <p class="text-slate-600 mb-8">Seleccione el rol y revise las fases antes de comenzar.</p>
+
+    <section class="bg-white p-6 rounded-xl shadow mb-8">
+      <h2 class="font-semibold text-xl mb-2 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">description</span>
+        Resumen del Caso
+      </h2>
+
+      <p class="text-sm mb-2"><strong>Tipo de Audiencia:</strong> Guarda y Régimen de Visitas</p>
+      <p class="text-sm mb-2"><strong>ID del Caso:</strong> C-GV-001</p>
+      <p class="text-sm mb-2"><strong>Estado:</strong> En proceso</p>
+
+      <p class="text-slate-600 text-sm mt-4">
+        El niño/a ha residido con la madre desde la separación.  
+        El padre solicita visitas ampliadas con pernocta.  
+        No existen riesgos graves según CONANI.
+      </p>
+    </section>
+
+    <!-- <section class="bg-white p-6 rounded-xl shadow mb-8">
+      <h2 class="font-semibold text-xl mb-4 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">groups</span>
+        Seleccione su Rol
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div onclick="seleccionarRol('juez')"
+             id="rol-juez"
+             class="cursor-pointer p-5 border rounded-xl hover:bg-slate-100 text-center">
+          <span class="material-icons-outlined text-4xl mb-2 text-[#1E2A47]">account_balance</span>
+          <p class="font-semibold">Juez</p>
+          <p class="text-xs text-slate-500">Evaluación completa</p>
+        </div>
+
+        <div onclick="seleccionarRol('madre')"
+             id="rol-madre"
+             class="cursor-pointer p-5 border rounded-xl hover:bg-slate-100 text-center">
+          <span class="material-icons-outlined text-4xl mb-2 text-[#1E2A47]">woman</span>
+          <p class="font-semibold">Abogado (Madre)</p>
+          <p class="text-xs text-slate-500">Presentación de argumentos</p>
+        </div>
+
+        <div onclick="seleccionarRol('padre')"
+             id="rol-padre"
+             class="cursor-pointer p-5 border rounded-xl hover:bg-slate-100 text-center">
+          <span class="material-icons-outlined text-4xl mb-2 text-[#1E2A47]">man</span>
+          <p class="font-semibold">Abogado (Padre)</p>
+          <p class="text-xs text-slate-500">Presentación de argumentos</p>
+        </div>
+
+      </div>
+    </section>
+
+     -->
+
+    <section class="bg-white p-6 rounded-xl shadow mb-8">
+      <h2 class="font-semibold text-xl mb-4 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">timeline</span>
+        Fases del Proceso
+      </h2>
+
+      <div class="grid grid-cols-5 gap-4 text-center">
+
+        <div class="fase-activa">
+          <div class="w-10 h-10 mx-auto rounded-full bg-[#FF7A00] text-white flex items-center justify-center font-bold">1</div>
+          <p class="text-sm mt-1">Conciliación</p>
+        </div>
+
+        <div class="fase">
+          <div class="w-10 h-10 mx-auto rounded-full bg-slate-300 flex items-center justify-center">2</div>
+          <p class="text-sm mt-1">Hechos</p>
+        </div>
+
+        <div class="fase">
+          <div class="w-10 h-10 mx-auto rounded-full bg-slate-300 flex items-center justify-center">3</div>
+          <p class="text-sm mt-1">Pruebas</p>
+        </div>
+
+        <div class="fase">
+          <div class="w-10 h-10 mx-auto rounded-full bg-slate-300 flex items-center justify-center">4</div>
+          <p class="text-sm mt-1">Debate</p>
+        </div>
+
+        <div class="fase">
+          <div class="w-10 h-10 mx-auto rounded-full bg-slate-300 flex items-center justify-center">5</div>
+          <p class="text-sm mt-1">Decisión</p>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="text-right">
+      <button onclick="iniciar()"
+              class="px-7 py-3 bg-[#1E2A47] hover:bg-[#162033] text-white rounded-lg flex items-center gap-2 ml-auto">
+        Iniciar Audiencia
+        <span class="material-icons-outlined">arrow_forward</span>
+      </button>
+    </div>
+
+  </main>
+</div>
+
+
+<script>
+let rolSeleccionado = null;
+
+function seleccionarRol(rol) {
+  rolSeleccionado = rol;
+
+  document.querySelectorAll('[id^="rol-"]').forEach((el) => {
+    el.classList.remove("bg-slate-200", "border-[#1E2A47]");
+    el.classList.add("border");
+  });
+
+  const seleccionado = document.getElementById("rol-" + rol);
+  seleccionado.classList.add("bg-slate-200", "border-[#1E2A47]");
+}
+
+function iniciar() {
+ 
+
+
+  window.location.href = "audiencia-conciliacion.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIMAUD-LEX — Datos del NNA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+</head>
+
+<body class="bg-[#f5f7fa] text-slate-800">
+
+
+  <div class="flex min-h-screen">
+    <aside class="w-72 bg-white shadow-md flex flex-col">
+      <div class="px-6 py-6 border-b">
+        <img src="img/logo-simaudlex.png" class="h-16 mx-auto mb-3" alt="Logo SIMAUD-LEX">
+        <p class="text-center text-sm text-slate-500">Simulador Jurídico de Audiencias</p>
+      </div>
+      <div class="px-6 py-4 border-b flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-semibold">
+          JP
+        </div>
+        <div>
+          <p class="font-semibold text-slate-800">Johan</p>
+          <p class="text-xs text-slate-500">Estudiante</p>
+        </div>
+      </div>
+      <nav class="flex-grow px-4 py-6">
+        <ul class="space-y-2">
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">dashboard</span>
+              Dashboard
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-100 font-semibold text-[#1E2A47]">
+              <span class="material-icons-outlined">gavel</span>
+              Simulaciones
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">folder_open</span>
+              Casos
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">menu_book</span>
+              Biblioteca Legal
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">help_outline</span>
+              Ayuda
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="p-6 border-t">
+        <button class="flex items-center gap-3 w-full px-4 py-2 rounded-lg hover:bg-slate-100 text-red-600 font-medium">
+          <span class="material-icons-outlined">logout</span>
+          Cerrar Sesión
+        </button>
+      </div>
+
+    </aside>
+
+    <main class="flex-1 p-10">
+
+      <h1 class="text-3xl font-bold text-[#1E2A47] mb-2">Crear Nuevo Caso</h1>
+      <p class="text-slate-600 mb-8">Ingrese los detalles del caso para continuar el proceso de simulación.</p>
+
+<div class="flex justify-between mb-10">
+
+        <div class="text-center">
+          <div class="w-10 h-10 mx-auto rounded-full bg-[#FF7A00] text-white flex items-center justify-center font-semibold">
+            1
+          </div>
+          <p class="mt-2 text-sm font-medium text-[#FF7A00]">Información Básica</p>
+        </div>
+         <div class="text-center">
+          <div class="w-10 h-10 mx-auto rounded-full bg-[#1E2A47] text-white flex items-center justify-center font-semibold">
+            2
+          </div>
+          <p class="mt-2 text-sm font-medium text-[#1E2A47]">Datos del NNA</p>
+        </div>
+
+    
+        <div class="text-center opacity-60">
+          <div class="w-10 h-10 mx-auto rounded-full bg-slate-300 flex items-center justify-center font-semibold">
+            3
+          </div>
+          <p class="mt-2 text-sm">Datos de los Padres</p>
+        </div>
+
+        <div class="text-center opacity-60">
+          <div class="w-10 h-10 mx-auto rounded-full bg-slate-300 flex items-center justify-center font-semibold">
+            4
+          </div>
+          <p class="mt-2 text-sm">Evidencias</p>
+        </div>
+
+        <div class="text-center opacity-60">
+          <div class="w-10 h-10 mx-auto rounded-full bg-slate-300 flex items-center justify-center font-semibold">
+            5
+          </div>
+          <p class="mt-2 text-sm">Revisar y Completar</p>
+        </div>
+
+      </div>
+
+
+      <div class="bg-white p-8 rounded-xl shadow border-l-4 border-[#1E2A47]">
+
+        <div class="flex items-center gap-2 mb-6">
+          <span class="material-icons-outlined text-[#1E2A47]">child_care</span>
+          <h2 class="text-xl font-semibold text-[#1E2A47]">Información del NNA (Niño, Niña o Adolescente)</h2>
+        </div>
+
+        <form class="space-y-6">
+
+          <div>
+            <label class="block font-medium mb-1">Nombre Completo *</label>
+            <input type="text" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#1E2A47]" placeholder="Ej: Juan Pérez García">
+          </div>
+
+          <div>
+            <label class="block font-medium mb-1">Edad *</label>
+            <input type="number" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#1E2A47]" placeholder="Ej: 8">
+          </div>
+
+          <div>
+            <label class="block font-medium mb-1">Escolaridad *</label>
+            <input type="text" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-[#1E2A47]" placeholder="Ej: 3er grado de primaria">
+          </div>
+
+          <div>
+            <label class="block font-medium mb-1">Estado de Salud *</label>
+            <textarea class="w-full p-3 border rounded-lg h-20 focus:ring-2 focus:ring-[#1E2A47]" placeholder="Describa condiciones médicas, tratamientos, etc."></textarea>
+          </div>
+
+          <div>
+            <label class="block font-medium mb-1">Residencia Actual *</label>
+            <textarea class="w-full p-3 border rounded-lg h-20 focus:ring-2 focus:ring-[#1E2A47]" placeholder="Dirección completa de residencia actual"></textarea>
+          </div>
+
+          <div>
+            <label class="block font-medium mb-1">Opinión del NNA (si procede)</label>
+            <textarea class="w-full p-3 border rounded-lg h-20 focus:ring-2 focus:ring-[#1E2A47]" placeholder="Registre la opinión del niño si tiene la edad y madurez suficiente"></textarea>
+          </div>
+
+        <a 
+  href="crear-caso-paso3-padres.html"
+  class="w-full block text-center bg-[#1E2A47] hover:bg-[#162033] text-white py-3 rounded-lg text-lg font-medium"
+>
+  Guardar Información del NNA
+</a>
+
+        </form>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

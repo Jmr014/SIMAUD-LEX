@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMAUD-LEX — Análisis Legal Automático</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+
+</head>
+
+<body class="bg-[#f5f7fa] text-slate-800">
+
+<div class="flex min-h-screen">
+
+  <aside class="w-72 bg-white shadow-md flex flex-col">
+
+    <div class="px-6 py-6 border-b">
+      <img src="img/logo-simaudlex.png" class="h-16 mx-auto mb-3" alt="Logo SIMAUD-LEX">
+      <p class="text-center text-sm text-slate-500">Simulador Jurídico de Audiencias</p>
+    </div>
+
+    <div class="px-6 py-4 border-b flex items-center gap-3">
+      <div class="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-semibold">JP</div>
+      <div>
+        <p class="font-semibold text-slate-800">Johan</p>
+        <p class="text-xs text-slate-500">Estudiante</p>
+      </div>
+    </div>
+
+    <nav class="flex-grow px-4 py-6">
+      <ul class="space-y-2">
+
+        <li>
+          <a href="dashboard.html" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+            <span class="material-icons-outlined">dashboard</span>
+            Dashboard
+          </a>
+        </li>
+
+        <li>
+          <a href="simulaciones.html" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+            <span class="material-icons-outlined">gavel</span>
+            Simulaciones
+          </a>
+        </li>
+
+        <li>
+          <a href="casos.html" class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-100 font-semibold text-[#1E2A47]">
+            <span class="material-icons-outlined">folder_open</span>
+            Casos
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="p-6 border-t">
+      <button class="flex items-center gap-3 w-full px-4 py-2 rounded-lg hover:bg-slate-100 text-red-600 font-medium">
+        <span class="material-icons-outlined">logout</span>
+        Cerrar Sesión
+      </button>
+    </div>
+
+  </aside>
+
+  <main class="flex-1 p-10">
+
+    <a href="caso-detalle.html" class="flex items-center gap-2 text-sm text-slate-600 mb-4 hover:underline">
+      <span class="material-icons-outlined text-base">arrow_back</span>
+      Volver al Caso
+    </a>
+
+    <h1 class="text-3xl font-bold text-[#1E2A47] mb-1">Análisis Legal del Caso</h1>
+    <p class="text-slate-600 mb-8">
+      Evaluación automática basada en reglas jurídicas (Ley 136-03), criterios técnicos y comparación con casos similares.
+    </p>
+
+    <div class="bg-white p-6 rounded-xl shadow mb-8">
+      <p class="text-sm mb-2 font-medium">Estado del análisis:</p>
+      <div class="flex items-center gap-3">
+        <span class="material-icons-outlined animate-spin text-[#1E2A47]">autorenew</span>
+        <p class="text-slate-600">Procesando información del caso...</p>
+      </div>
+    </div>
+
+    <section class="bg-white p-6 rounded-xl shadow mb-6">
+      <h2 class="font-semibold text-xl mb-3 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">rule</span>
+        Aplicación de Reglas Jurídicas
+      </h2>
+
+      <ul class="list-disc ml-6 text-sm space-y-2 text-slate-700">
+        <li><strong>Art. 102:</strong> Interés superior del niño favorece estabilidad actual.</li>
+        <li><strong>Art. 96:</strong> Si la guarda permanece con la madre → se regula visitas del padre.</li>
+        <li><strong>Art. 103:</strong> Visitas deben ser periódicas, garantizar acceso y contacto permanente.</li>
+        <li><strong>Art. 102(d):</strong> Incumplimientos leves del padre afectan idoneidad parcial, pero no lo inhabilitan.</li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-6 rounded-xl shadow mb-6">
+      <h2 class="font-semibold text-xl mb-3 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">library_books</span>
+        Casos Similares Identificados (CBR)
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <div class="bg-slate-100 p-4 rounded-lg">
+          <p class="font-semibold">Caso 45-C-2022</p>
+          <p class="text-sm text-slate-600">Similitud: <strong>89%</strong></p>
+          <p class="text-xs text-slate-500">Guarda para la madre. Visitas supervisadas al padre.</p>
+        </div>
+
+        <div class="bg-slate-100 p-4 rounded-lg">
+          <p class="font-semibold">Caso 12-A-2023</p>
+          <p class="text-sm text-slate-600">Similitud: <strong>76%</strong></p>
+          <p class="text-xs text-slate-500">Pernocta limitada por trabajo rotativo.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bg-white p-6 rounded-xl shadow mb-8">
+      <h2 class="font-semibold text-xl mb-3 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">tips_and_updates</span>
+        Recomendación Preliminar del Sistema
+      </h2>
+
+      <p class="text-slate-700 leading-relaxed text-sm">
+        El análisis preliminar sugiere mantener la guarda con la madre, debido a condiciones de estabilidad emocional,
+        constancia en el cuidado y resultado favorable del informe psicosocial (CONANI).  
+        Para el padre se recomienda un régimen de visitas fijo dos veces al mes,  
+        con una tarde intersemanal sin pernocta debido a su horario rotativo.
+      </p>
+    </section>
+
+    <a href="audiencia-iniciar.html"
+       class="w-full py-3 bg-[#1E2A47] hover:bg-[#162033] text-white text-lg rounded-lg font-semibold block text-center">
+       Continuar a la Audiencia
+    </a>
+
+  </main>
+
+</div>
+
+</body>
+</html>

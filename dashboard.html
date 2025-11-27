@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIMAUD-LEX — Panel de Control</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+</head>
+
+<body class="bg-[#f5f7fa] text-slate-800">
+
+  <div class="flex min-h-screen">
+
+    <aside class="w-72 bg-white shadow-md flex flex-col">
+      <div class="px-6 py-6 border-b">
+        <img src="img/logo-simaudlex.png" class="h-16 mx-auto mb-3" alt="Logo SIMAUD-LEX">
+        <p class="text-center text-sm text-slate-500">Simulador Jurídico de Audiencias</p>
+      </div>
+
+ 
+      <div class="px-6 py-4 border-b flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-semibold">
+          JP
+        </div>
+        <div>
+          <p class="font-semibold text-slate-800">Johan</p>
+          <p class="text-xs text-slate-500">Estudiante</p>
+        </div>
+      </div>
+
+      <nav class="flex-grow px-4 py-6">
+        <ul class="space-y-2">
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-100 font-semibold text-[#1E2A47]">
+              <span class="material-icons-outlined">dashboard</span>
+              Dashboard
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">gavel</span>
+              Simulaciones
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">folder_open</span>
+              Casos
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">menu_book</span>
+              Biblioteca Legal
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">help_outline</span>
+              Ayuda
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="p-6 border-t">
+        <button class="flex items-center gap-3 w-full px-4 py-2 rounded-lg hover:bg-slate-100 text-red-600 font-medium">
+          <span class="material-icons-outlined">logout</span>
+          Cerrar Sesión
+        </button>
+      </div>
+
+    </aside>
+
+
+    <main class="flex-1 p-10">
+
+      <div class="flex justify-between items-center mb-10">
+        <div>
+          <h1 class="text-3xl font-bold text-[#1E2A47]">Panel de Control</h1>
+          <p class="text-slate-600">Administre sus casos y acceda a la base de conocimiento legal</p>
+        </div>
+
+        <!-- <button class="flex items-center gap-2 bg-[#FF7A00] hover:bg-[#162033] text-white px-5 py-2.5 rounded-lg shadow-sm">
+          <span class="material-icons-outlined">add</span>
+          Nuevo Caso
+        </button> -->
+        <a 
+  href="crear-caso-paso1.html"
+  class="flex items-center gap-2 bg-[#FF7A00] hover:bg-[#162033] text-white px-5 py-2.5 rounded-lg shadow-sm"
+>
+  <span class="material-icons-outlined">add</span>
+  Nuevo Caso
+</a>
+
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+
+        <div class="bg-white p-6 rounded-xl shadow border-l-4 border-[#1E2A47]">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="material-icons-outlined text-xl text-[#1E2A47]">gavel</span>
+            <h3 class="font-semibold text-lg text-[#1E2A47]">En Progreso</h3>
+          </div>
+          <p class="text-slate-500 text-sm">Sesiones de audiencia activas</p>
+          <p class="text-4xl font-bold text-[#1E2A47] mt-4">0</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow border-l-4 border-[#FF7A00]">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="material-icons-outlined text-xl text-[#FF7A00]">book</span>
+            <h3 class="font-semibold text-lg text-[#FF7A00]">Completados</h3>
+          </div>
+          <p class="text-slate-500 text-sm">Casos con decisiones</p>
+          <p class="text-4xl font-bold text-[#FF7A00] mt-4">0</p>
+        </div>
+
+      </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+  <!-- CASOS RECIENTES -->
+  <div class="bg-white p-6 rounded-xl shadow border-l-4 border-[#1E2A47]">
+    
+    <div class="flex items-center gap-2 mb-3">
+      <span class="material-icons-outlined p-2 rounded-lg bg-[#e6ecf5] text-[#1E2A47]">history</span>
+      <h3 class="text-xl font-semibold text-[#1E2A47]">Casos Recientes</h3>
+    </div>
+
+    <p class="text-slate-500 mb-4">Su actividad más reciente</p>
+
+    <div class="space-y-4">
+      <div class="flex justify-between border-b pb-2">
+        <div>
+          <p class="font-semibold">Régimen de Visitas</p>
+          <p class="text-sm text-slate-500">Régimen de Visitas - Arts. 96-108</p>
+        </div>
+        <span class="text-slate-500 text-sm">25/11/2025</span>
+      </div>
+
+      <div class="flex justify-between">
+        <div>
+          <p class="font-semibold">Disputa de Custodia</p>
+          <p class="text-sm text-slate-500">Guarda (Custodia) - Arts. 82-95</p>
+        </div>
+        <span class="text-slate-500 text-sm">26/11/2025</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ACCIONES RÁPIDAS -->
+  <div class="bg-white p-6 rounded-xl shadow border-l-4 border-[#FF7A00]">
+    
+    <div class="flex items-center gap-2 mb-3">
+      <span class="material-icons-outlined p-2 rounded-lg bg-orange-100 text-[#FF7A00]">bolt</span>
+      <h3 class="text-xl font-semibold text-[#FF7A00]">Acciones Rápidas</h3>
+    </div>
+
+    <p class="text-slate-500 mb-4">Tareas y accesos comunes</p>
+
+    <div class="space-y-3">
+
+      <!-- <button class="w-full flex items-center gap-3 px-4 py-3 bg-slate-50 hover:bg-slate-100 rounded-lg transition">
+        <span class="material-icons-outlined text-[#1E2A47]">add_circle</span>
+        Crear Nuevo Caso
+      </button> -->
+<a 
+  href="crear-caso-paso1.html"
+  class="w-full flex items-center gap-3 px-4 py-3 bg-slate-50 hover:bg-slate-100 rounded-lg transition"
+>
+  <span class="material-icons-outlined text-[#1E2A47]">add_circle</span>
+  Crear Nuevo Caso
+</a>
+
+      <button class="w-full flex items-center gap-3 px-4 py-3 bg-slate-50 hover:bg-slate-100 rounded-lg transition">
+        <span class="material-icons-outlined text-[#1E2A47]">menu_book</span>
+        Explorar Artículos Legales
+      </button>
+
+      <button class="w-full flex items-center gap-3 px-4 py-3 bg-slate-50 hover:bg-slate-100 rounded-lg transition">
+        <span class="material-icons-outlined text-[#1E2A47]">folder</span>
+        Ver Todos los Casos
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

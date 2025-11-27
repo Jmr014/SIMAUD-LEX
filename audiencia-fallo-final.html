@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMAUD-LEX — Fallo Final del Caso</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+
+  <style>
+    .titulo-seccion {
+      border-left: 4px solid #1E2A47;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+
+<body class="bg-[#f5f7fa] text-slate-800">
+
+<div class="flex min-h-screen">
+
+  <!-- SIDEBAR -->
+  <aside class="w-72 bg-white shadow-md flex flex-col">
+
+    <div class="px-6 py-6 border-b">
+      <img src="img/logo-simaudlex.png" class="h-16 mx-auto mb-3" alt="Logo SIMAUD-LEX">
+      <p class="text-center text-sm text-slate-500">Simulador Jurídico de Audiencias</p>
+    </div>
+
+    <div class="px-6 py-4 border-b flex items-center gap-3">
+      <div class="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-semibold">JP</div>
+      <div>
+        <p class="font-semibold text-slate-800">Johan</p>
+        <p class="text-xs text-slate-500">Estudiante</p>
+      </div>
+    </div>
+
+    <nav class="flex-grow px-4 py-6">
+      <ul class="space-y-2">
+
+        <li>
+          <a href="dashboard.html" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+            <span class="material-icons-outlined">dashboard</span>
+            Dashboard
+          </a>
+        </li>
+
+        <li>
+          <a href="simulaciones.html" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+            <span class="material-icons-outlined">gavel</span>
+            Simulaciones
+          </a>
+        </li>
+
+        <li>
+          <a href="casos.html" class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-100 font-semibold text-[#1E2A47]">
+            <span class="material-icons-outlined">folder_open</span>
+            Casos
+          </a>
+        </li>
+
+        <li>
+          <a href="biblioteca.html" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+            <span class="material-icons-outlined">menu_book</span>
+            Biblioteca Legal
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="p-6 border-t">
+      <button class="flex items-center gap-3 w-full px-4 py-2 rounded-lg hover:bg-slate-100 text-red-600 font-medium">
+        <span class="material-icons-outlined">logout</span>
+        Cerrar Sesión
+      </button>
+    </div>
+
+  </aside>
+  <!-- FIN SIDEBAR -->
+
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="flex-1 p-10">
+
+    <a href="casos.html" class="flex items-center gap-2 text-sm text-slate-600 mb-6 hover:underline">
+      <span class="material-icons-outlined text-base">arrow_back</span>
+      Volver al listado de casos
+    </a>
+
+    <h1 class="text-3xl font-bold text-[#1E2A47] mb-1">Fallo Final del Caso</h1>
+    <p class="text-slate-600 mb-10">Caso ID: C-GV-001 | Tribunal de Niños, Niñas y Adolescentes</p>
+
+    <!-- SECCIÓN: RESUMEN DEL FALLO -->
+    <section class="bg-white p-6 rounded-xl shadow mb-10 titulo-seccion">
+      <h2 class="font-semibold text-xl mb-3 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">gavel</span>
+        Decisión Final del Tribunal
+      </h2>
+
+      <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+        Luego de analizar los hechos probados, las pruebas aportadas, el informe psicosocial de CONANI,
+        los argumentos de las partes y aplicando los artículos 96, 97, 100, 102, 103 y 104 de la Ley 136-03,
+        este tribunal emite el siguiente fallo:
+      </p>
+
+      <!-- BLOQUES DEL FALLO -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="bg-slate-50 p-5 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-lg mb-2">Guarda del Niño/a</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Se mantiene la guarda con la <strong>Madre</strong>.  
+            La decisión se fundamenta en la estabilidad emocional, escolar y afectiva demostrada,
+            respaldada por el informe CONANI favorable.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-5 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-lg mb-2">Régimen de Visitas</h3>
+          <ul class="text-sm text-slate-700 leading-relaxed list-disc ml-4">
+            <li>Dos fines de semana al mes con pernocta (sábado tarde → domingo tarde).</li>
+            <li>Una tarde intersemanal sin pernocta.</li>
+            <li>Vacaciones escolares divididas por mitad.</li>
+            <li>Puntualidad estricta obligatoria.</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-50 p-5 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-lg mb-2">Pensión Alimentaria</h3>
+          <p class="text-sm text-slate-700">
+            El padre deberá aportar una pensión mensual de <strong>RD$ 12,000</strong>,
+            conforme al Art. 182 de la Ley 136-03.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- JUSTIFICACIÓN JURÍDICA -->
+    <section class="bg-white p-6 rounded-xl shadow mb-10 titulo-seccion">
+      <h2 class="font-semibold text-xl mb-3 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">menu_book</span>
+        Fundamentos Jurídicos del Fallo
+      </h2>
+
+      <p class="text-sm text-slate-700 leading-relaxed">
+        El tribunal valoró el interés superior del niño (Art. 102), la idoneidad familiar
+        (Art. 102(a)), el contacto permanente con ambos padres (Art. 97),
+        las pruebas lícitas presentadas y el comportamiento previo de cada parte.
+        Se aplicaron las reglas sobre guarda, régimen de visitas y responsabilidad parental,
+        siguiendo un análisis integral de las circunstancias del caso.
+      </p>
+    </section>
+
+
+    <!-- REGLAS + CBR + ADVERTENCIAS -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-3 flex items-center gap-2">
+          <span class="material-icons-outlined text-[#1E2A47]">rule</span>
+          Reglas Aplicadas
+        </h3>
+        <ul class="text-sm text-slate-700 space-y-2">
+          <li>• Art. 102 — Interés Superior del Niño</li>
+          <li>• Art. 102(a) — Idoneidad Familiar</li>
+          <li>• Art. 96 — Vinculación Guarda-Visita</li>
+          <li>• Art. 97 — Contacto Permanente</li>
+          <li>• Art. 103 — Frecuencia y Modalidades de Visita</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-3 flex items-center gap-2">
+          <span class="material-icons-outlined text-[#1E2A47]">analytics</span>
+          Casos Similares (CBR)
+        </h3>
+        <ul class="text-sm text-slate-700 space-y-2">
+          <li>• Caso C-GV-001 — 82% similitud</li>
+          <li>• Caso C-GV-043 — 76% similitud</li>
+        </ul>
+      </div>
+
+      <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-3 text-yellow-700 flex items-center gap-2">
+          <span class="material-icons-outlined">warning</span>
+          Advertencias Legales
+        </h3>
+        <p class="text-sm text-yellow-800 leading-relaxed">
+          Todo incumplimiento grave del régimen de visitas o de la pensión alimentaria 
+          podrá derivar en sanciones conforme los artículos 104 y 107 de la Ley 136-03.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- BOTONES FINALES -->
+    <div class="flex justify-between mt-10">
+      <button class="px-6 py-3 bg-[#FF7A00] hover:bg-[#e06a00] text-white rounded-lg font-semibold flex items-center gap-2">
+        <span class="material-icons-outlined">close</span>
+        Cerrar Caso
+      </button>
+<button class="px-5 py-2 rounded-lg bg-slate-200 hover:bg-slate-300 text-sm flex items-center gap-2"
+                onclick="window.location.href='caso-detalle.html'">
+          <span class="material-icons-outlined text-sm">arrow_back</span>
+          Volver al Caso
+        </button>
+
+      <button class="px-6 py-3 bg-[#1E2A47] hover:bg-[#162033] text-white rounded-lg font-semibold flex items-center gap-2">
+        <span class="material-icons-outlined">picture_as_pdf</span>
+        Descargar Sentencia PDF
+      </button>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>
