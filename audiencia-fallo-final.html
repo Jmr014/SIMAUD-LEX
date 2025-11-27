@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMAUD-LEX — Fase 5: Decisión Simulada</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+
+  <style>
+    .paso-activo { background:#FF7A00 !important; color:white !important; }
+    .dialogo-juez { background:#1E2A47; color:white }
+    .chip { background:#1E2A47; color:white; padding:2px 8px; border-radius:999px; font-size:11px; }
+  </style>
+</head>
+
+<body class="bg-[#f5f7fa] text-slate-800">
+<div class="flex min-h-screen">
+
+  <!-- SIDEBAR -->
+  <aside class="w-72 bg-white shadow-md flex flex-col">
+
+    <div class="px-6 py-6 border-b">
+      <img src="img/logo-simaudlex.png" class="h-16 mx-auto mb-3" alt="Logo SIMAUD-LEX">
+      <p class="text-center text-sm text-slate-500">Jurídico de Audiencias</p>
+    </div>
+
+    <div class="px-6 py-4 border-b flex items-center gap-3">
+      <div class="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 font-semibold">JP</div>
+      <div>
+        <p class="font-semibold text-slate-800">Johan</p>
+        <p class="text-xs text-slate-500">Estudiante</p>
+      </div>
+    </div>
+
+  
+      <nav class="flex-grow px-4 py-6">
+        <ul class="space-y-2">
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-100 font-semibold text-[#1E2A47]">
+              <span class="material-icons-outlined">dashboard</span>
+              Dashboard
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">gavel</span>
+              Simulaciones
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">folder_open</span>
+              Casos
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">menu_book</span>
+              Biblioteca Legal
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-slate-100">
+              <span class="material-icons-outlined">help_outline</span>
+              Ayuda
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    <div class="p-6 border-t">
+      <button class="flex items-center gap-3 w-full px-4 py-2 rounded-lg hover:bg-slate-100 text-red-600 font-medium">
+        <span class="material-icons-outlined">logout</span>
+        Cerrar Sesión
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="flex-1 p-10">
+
+    <!-- Pasos -->
+    <div class="flex justify-between max-w-3xl mb-10">
+
+      <div class="text-center">
+        <div class="w-10 h-10 mx-auto rounded-full bg-[#1E2A47] text-white  flex items-center justify-center">1</div>
+        <p class="text-sm mt-1 font-semibold text-[#1E2A47]">Conciliación</p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-10 h-10 mx-auto bg-[#1E2A47] text-white rounded-full flex items-center justify-center">2</div>
+        <p class="text-sm mt-1 font-semibold text-[#1E2A47]">Hechos</p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-10 h-10 mx-auto rounded-full  bg-[#1E2A47] text-white flex items-center justify-center">3</div>
+        <p class="text-sm mt-1 font-semibold text-[#1E2A47]">Pruebas</p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-10 h-10 mx-auto rounded-full bg-[#1E2A47] text-white flex items-center justify-center">4</div>
+        <p class="text-sm mt-1 font-semibold text-[#1E2A47]">Debate</p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-10 h-10 mx-auto rounded-full bg-[#1E2A47]  paso-activo flex items-center justify-center">5</div>
+        <p class="text-sm mt-1 font-semibold text-[#FF7A00]">Decisión</p>
+      </div>
+    </div>
+
+    <h1 class="text-3xl font-bold text-[#1E2A47] mb-2">Fase 5 — Decisión Simulada</h1>
+    <p class="text-slate-600 mb-6">
+      Resultado de la audiencia simulada, basado en las reglas de la Ley 136-03 y en casos similares (CBR).
+    </p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+
+      <section class="lg:col-span-2 bg-white p-6 rounded-xl shadow border-l-4 border-[#1E2A47]">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="font-semibold text-xl flex items-center gap-2">
+            <span class="material-icons-outlined text-[#1E2A47]">gavel</span>
+            Decisión del Juez Simulado
+          </h2>
+          <span class="chip flex items-center gap-1">
+            <span class="material-icons-outlined text-xs">verified</span>
+            Simulación
+          </span>
+        </div>
+
+        <p class="text-sm text-slate-500 mb-4">
+          Esta decisión es referencial y forma parte del entrenamiento jurídico.  
+          No tiene efectos reales, pero sigue la lógica de los artículos 96, 97, 98, 100, 102, 103 y 104 de la Ley 136-03.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+
+          <div class="bg-slate-50 p-4 rounded-lg">
+            <p class="text-xs font-semibold text-slate-500 uppercase mb-1">Guarda</p>
+            <p class="font-semibold text-[#1E2A47]">Se mantiene con la Madre</p>
+            <p class="text-xs text-slate-500 mt-1">
+              Estabilidad, cuidado principal desde el nacimiento y entorno favorable (informe CONANI).
+            </p>
+          </div>
+
+          <div class="bg-slate-50 p-4 rounded-lg">
+            <p class="text-xs font-semibold text-slate-500 uppercase mb-1">Régimen de Visitas del Padre</p>
+            <ul class="text-xs text-slate-600 list-disc ml-4 space-y-1">
+              <li>Dos fines de semana al mes con pernocta (sábado tarde a domingo tarde).</li>
+              <li>Una tarde intersemanal sin pernocta.</li>
+              <li>Vacaciones escolares divididas por mitad.</li>
+            </ul>
+          </div>
+
+          <div class="bg-slate-50 p-4 rounded-lg">
+            <p class="text-xs font-semibold text-slate-500 uppercase mb-1">Condiciones</p>
+            <ul class="text-xs text-slate-600 list-disc ml-4 space-y-1">
+              <li>Puntualidad estricta en entrega y recogida.</li>
+              <li>No interferir con la rutina escolar.</li>
+              <li>Comunicación respetuosa entre los padres.</li>
+            </ul>
+          </div>
+
+          <div class="bg-slate-50 p-4 rounded-lg">
+            <p class="text-xs font-semibold text-slate-500 uppercase mb-1">Medidas Cautelares</p>
+            <p class="text-xs text-slate-600">
+              No se imponen medidas cautelares adicionales, al no existir evidencia de violencia ni riesgo grave.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- <aside class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-2 flex items-center gap-2">
+          <span class="material-icons-outlined text-[#1E2A47]">insights</span>
+          Nivel de Certeza
+        </h3>
+
+        <p class="text-xs text-slate-500 mb-1">Basado en reglas + caso precedente.</p>
+        <div class="w-full bg-slate-100 rounded-full h-3 mb-1">
+          <div class="bg-[#FF7A00] h-3 rounded-full" style="width: 82%;"></div>
+        </div>
+        <p class="text-xs text-slate-600 mb-4">
+          Certeza estimada: <span class="font-semibold">82%</span>
+        </p>
+
+        <h4 class="font-semibold text-sm mb-1 flex items-center gap-1">
+          <span class="material-icons-outlined text-xs text-[#1E2A47]">history_edu</span>
+          Caso similar consultado (CBR)
+        </h4>
+        <p class="text-xs text-slate-500 mb-2">
+          ID: C-GV-001 — Niño de 8 años, guarda con la madre, informe CONANI favorable, padre con turnos rotativos.
+        </p>
+
+        <ul class="text-xs text-slate-600 list-disc ml-4 space-y-1 mb-3">
+          <li>Coincidencia en edad y cuidador principal.</li>
+          <li>Informe psicosocial favorable a la madre.</li>
+          <li>Incumplimientos leves del padre (horario).</li>
+        </ul>
+
+        <p class="text-[11px] text-slate-500">
+          El motor CBR recupera este caso como referencia para sugerir un régimen de visitas amplio,
+          pero con condiciones de puntualidad y supervisión moderada.
+        </p>
+      </aside> -->
+
+<aside class="bg-white p-6 rounded-xl shadow">
+
+  <h3 class="font-semibold mb-2 flex items-center gap-2">
+    <span class="material-icons-outlined text-[#1E2A47]">insights</span>
+    Nivel de Certeza
+  </h3>
+
+  <p class="text-xs text-slate-500 mb-1">Basado en reglas + caso precedente.</p>
+
+  <div class="w-full bg-slate-100 rounded-full h-3 mb-1">
+    <div class="bg-[#FF7A00] h-3 rounded-full" style="width: 82%;"></div>
+  </div>
+
+  <p class="text-xs text-slate-600 mb-4">
+    Certeza estimada: <span class="font-semibold">90%</span>
+  </p>
+
+  <h4 class="font-semibold text-sm mb-2 flex items-center gap-2">
+    <span class="material-icons-outlined text-xs text-[#1E2A47]">history_edu</span>
+    Casos Similares (CBR)
+  </h4>
+
+  <p class="text-[11px] text-slate-500 mb-3">
+    Precedentes recuperados con atributos similares al caso analizado.
+  </p>
+
+  <div class="space-y-3">
+
+    <div class="border rounded-lg p-3 bg-slate-50">
+      <p class="text-xs font-semibold">Caso 2023-04 — Guarda y Visitas</p>
+      <p class="text-[11px] text-slate-600 mt-1">
+        Niño de 7 años, guarda con la madre, 3 incumplimientos leves del padre,
+        CONANI favorable a la madre.
+      </p>
+      <p class="text-[11px] text-slate-700 mt-1">
+        <strong>Decisión:</strong> Guarda con la madre; visitas fines de semana sin pernocta.
+      </p>
+      <p class="text-[11px] text-[#1E2A47] font-semibold mt-1">
+        Similitud estimada: 82%
+      </p>
+    </div>
+
+    <div class="border rounded-lg p-3 bg-slate-50">
+      <p class="text-xs font-semibold">Caso 2022-11 — Régimen de Visitas</p>
+      <p class="text-[11px] text-slate-600 mt-1">
+        Niño de 9 años, padre con horarios rotativos, visitas supervisadas inicialmente.
+      </p>
+      <p class="text-[11px] text-slate-700 mt-1">
+        <strong>Decisión:</strong> Régimen ampliado gradualmente según cumplimiento.
+      </p>
+      <p class="text-[11px] text-[#1E2A47] font-semibold mt-1">
+        Similitud estimada: 74%
+      </p>
+    </div>
+
+  </div>
+
+</aside>
+
+    </div>
+
+    <section class="bg-white p-6 rounded-xl shadow mb-8">
+      <h2 class="font-semibold text-lg mb-3 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">menu_book</span>
+        Justificación Jurídica del Fallo
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+
+        <div class="bg-slate-50 p-4 rounded-lg">
+          <p class="text-xs font-semibold text-slate-500 uppercase mb-1">Reglas sobre Guarda</p>
+          <ul class="text-xs text-slate-600 list-disc ml-4 space-y-1">
+            <li><strong>Regla del Interés Superior</strong> — Art. 102.</li>
+            <li><strong>Idoneidad Familiar (CONANI)</strong> — Art. 102(a).</li>
+            <li><strong>Pronunciamiento por Sentencia</strong> — Art. 95.</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-50 p-4 rounded-lg">
+          <p class="text-xs font-semibold text-slate-500 uppercase mb-1">Reglas sobre Visitas</p>
+          <ul class="text-xs text-slate-600 list-disc ml-4 space-y-1">
+            <li><strong>Vinculación Guarda-Visita</strong> — Art. 96.</li>
+            <li><strong>Contacto Permanente con ambos padres</strong> — Art. 97.</li>
+            <li><strong>Periodicidad y frecuencia</strong> — Art. 103(c).</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-50 p-4 rounded-lg">
+          <p class="text-xs font-semibold text-slate-500 uppercase mb-1">Valoración de Incumplimientos</p>
+          <ul class="text-xs text-slate-600 list-disc ml-4 space-y-1">
+            <li><strong>Violaciones Reiteradas</strong> — Art. 102(d).</li>
+            <li>Los incumplimientos leves del padre justifican condiciones, no suspensión de visitas.</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-50 p-4 rounded-lg">
+          <p class="text-xs font-semibold text-slate-500 uppercase mb-1">Principios Rectores</p>
+          <ul class="text-xs text-slate-600 list-disc ml-4 space-y-1">
+            <li>Estabilidad del entorno del niño.</li>
+            <li>Mantenimiento del vínculo afectivo con ambos padres.</li>
+            <li>Protección del rendimiento escolar y de la rutina diaria.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="text-sm text-slate-700 leading-relaxed">
+        El juez simulado considera que la madre mantiene un entorno estable, con reporte favorable de CONANI
+        y sin antecedentes de violencia ni incumplimientos graves. El padre presenta dos incumplimientos de horario,
+        pero mantiene un vínculo afectivo con el niño y no existen elementos que justifiquen restringir en forma
+        drástica el contacto, sino más bien regularlo con condiciones claras de puntualidad y respeto a la rutina
+        escolar.
+      </p>
+    </section>
+
+    <section class="bg-white p-6 rounded-xl shadow mb-10">
+      <h2 class="font-semibold text-lg mb-2 flex items-center gap-2">
+        <span class="material-icons-outlined text-[#1E2A47]">receipt_long</span>
+        Registro de la Decisión (Log de Inferencias)
+      </h2>
+      <p class="text-xs text-slate-500 mb-3">
+        Este registro muestra, de forma transparente, los pasos de razonamiento que siguió el sistema.
+      </p>
+
+      <div class="bg-slate-50 border rounded-lg p-4 text-xs space-y-2">
+        <p>• Se verificó la fase de conciliación (Art. 98) → No hubo acuerdo total.</p>
+        <p>• Se confirmaron los hechos probados y las pruebas lícitas (Art. 102).</p>
+        <p>• Se aplicó la regla del interés superior del niño (Art. 102 — principio rector).</p>
+        <p>• Se valoró el informe CONANI favorable a la madre (Art. 102(a)).</p>
+        <p>• Se analizó el historial de incumplimientos leves del padre (Art. 102(d)).</p>
+        <p>• Se consultó un caso similar mediante el módulo de casos (CBR).</p>
+        <p>• Se generó una propuesta de guarda y régimen de visitas con nivel de certeza estimado.</p>
+      </div>
+
+      <div class="flex flex-wrap justify-end gap-3 mt-6">
+        <button class="px-5 py-2 rounded-lg bg-slate-200 hover:bg-slate-300 text-sm flex items-center gap-2"
+                onclick="window.location.href='caso-detalle.html'">
+          <span class="material-icons-outlined text-sm">arrow_back</span>
+          Volver al Caso
+        </button>
+
+        <button class="px-5 py-2 rounded-lg border border-slate-300 hover:bg-slate-100 text-sm flex items-center gap-2"
+                onclick="alert('📝 Acta simulada generada.')">
+          <span class="material-icons-outlined text-sm">picture_as_pdf</span>
+          Descargar Acta Simulada
+        </button>
+
+        <button class="px-5 py-2 rounded-lg bg-[#1E2A47] hover:bg-[#162033] text-white text-sm flex items-center gap-2"
+                onclick="alert('✅ Decisión simulada guardada en el sistema .')">
+          <span class="material-icons-outlined text-sm">save</span>
+          Guardar Decisión
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+</body>
+</html>
